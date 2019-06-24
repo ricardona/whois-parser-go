@@ -146,6 +146,10 @@ func Parse(text string) (whoisInfo WhoisInfo, err error) {
 			}
 		case "registrant_id":
 			registrant.ID = value
+		case "registrant_country":
+			registrant.Country = value
+		case "registrant_organization":
+			registrant.Organization = value
 		case "admin_id":
 			admin.ID = value
 		case "tech_id":
